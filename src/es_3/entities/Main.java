@@ -22,25 +22,7 @@ public class Main {
 
         Carrello carrello = new Carrello(neww ,primo, primo.price);
         System.out.println("RESOCONTO CARRELLO: " + carrello);
-
-//        System.out.println("LISTA DEGLI ARTICOLI");
-//        Articolo primo = new Articolo("223D", "Ledger Nano S , hardware wallet", 91.99 , 253);
-//        System.out.println("1) " + primo);
-//        Articolo secondo = new Articolo("741H", "Trezor One, hardware wallet", 76.45 , 398);
-//        System.out.println("2) " + secondo);
-
-
-//        Chiamata[] chiamate = new Chiamata[5];
-//        chiamate[0] = new Chiamata("+39 3494278805", 20);
-//        chiamate[1] = new Chiamata("+39 3494278805", 1);
-//        chiamate[2] = new Chiamata("+39 3494275405", 7);
-//        chiamate[3] = new Chiamata("+39 3494278876", 1);
-//        chiamate[4] = new Chiamata("+39 3494272358", 13);
-//        uno.setChiamate(chiamate);
-//        uno.stampaDati();
-
-
-
+        
         scan.close();
     }
 }
