@@ -20,6 +20,9 @@ public class Main {
         Cliente neww = new Cliente( name, email);
         System.out.println("REGISTRAZIONE AVVENUTA CON SUCCESSO: " + neww);
 
+        Carrello carrello = new Carrello(neww ,primo, primo.price);
+        System.out.println("RESOCONTO CARRELLO: " + carrello);
+
 //        System.out.println("LISTA DEGLI ARTICOLI");
 //        Articolo primo = new Articolo("223D", "Ledger Nano S , hardware wallet", 91.99 , 253);
 //        System.out.println("1) " + primo);
