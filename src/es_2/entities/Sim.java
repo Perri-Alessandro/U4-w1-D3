@@ -4,54 +4,57 @@ import java.util.Arrays;
 
 public class Sim {
     private long numero;
-    private int credito;
+    private double credito;
     private Chiamata[] chiamate;
 
-    private long numeroChiamato;
 
     public Sim(long numero) {
-       this.numero = numero;
-       this.credito = 0 ;
-       this.chiamate = new Chiamata[0];
-       this.numeroChiamato = 0;
-    }
-    public Sim () {
         this.numero = numero;
-        this.credito = 22 ;
+        this.credito = 0;
         this.chiamate = new Chiamata[5];
-        this.numeroChiamato = 0;
     }
 
-    public void aggiungiChiamata(int durata, int numeroChiamato){
-      if(numeroChiamato < chiamate.length) {
-      chiamate[numeroChiamato] = new Chiamata(durata, numeroChiamato);
-      numeroChiamato ++;
-      } else {
-      System.out.println("IMPOSSIBILE AGGIUNGERE CHIAMATA,ARRAY PIENO");
-      }
+    public void aggiungiCash(double nuovoCredito) {
+        this.credito += nuovoCredito;
     }
-    private class Chiamata {
-        private int durata;
-        private long numeroChiamato;
 
-     public Chiamata (int durata, long numeroChiamato){
-         this.durata = durata;
-         this.numeroChiamato = numeroChiamato;
-     }
+    public void setChiamate(Chiamata[] chiamate) {
+        this.chiamate = chiamate;
+    }
 
+    public void stampaDati() {
+        System.out.println("Sim: " + this.numero);
+        System.out.println("Credito disponibile: " + this.credito);
+//		System.out.println("Lista chiamate Sim: " + Arrays.toString(listaChiamate));
+        if (chiamate[0] != null) {
+            System.out.println("- Chiamata 1: " + chiamate[0].getNumeroChiamato() + " - Durata minuti: "
+                    + chiamate[0].getDurata());
+        }
+        if (chiamate[1] != null) {
+            System.out.println("- Chiamata 2: " + chiamate[1].getNumeroChiamato() + " - Durata minuti: "
+                    + chiamate[1].getDurata());
+        }
+        if (chiamate[2] != null) {
+            System.out.println("- Chiamata 3: " + chiamate[2].getNumeroChiamato() + " - Durata minuti: "
+                    + chiamate[2].getDurata());
+        }
+        if (chiamate[3] != null) {
+            System.out.println("- Chiamata 4: " + chiamate[3].getNumeroChiamato() + " - Durata minuti: "
+                    + chiamate[3].getDurata());
+        }
+        if (chiamate[4] != null) {
+            System.out.println("- Chiamata 5: " + chiamate[4].getNumeroChiamato() + " - Durata minuti: "
+                    + chiamate[4].getDurata());
+        }
+    }
 
-        @Override
-        public String toString() {
-            return "Chiamata{" +
-                    "Durata: " + durata +
-                    ", Numero chiamato: " + numeroChiamato +
-                    "}";
-     };
-        };
     @Override
     public String toString() {
-        return "Numero: " + numero + ", Credito: " + credito + ", Chiamate: " + Arrays.toString(chiamate);
+        return "Sim{" +
+                "numero=" + numero +
+                ", credito='" + credito + '\'' +
+                ", chiamate='" + Arrays.toString(chiamate) + '\'' +
+                '}';
     }
-
 }
 

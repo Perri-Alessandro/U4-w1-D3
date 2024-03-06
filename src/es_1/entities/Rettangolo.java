@@ -4,23 +4,12 @@ public class Rettangolo {
     private int altezza;
     private int larghezza;
 
-    private int altezza1;
-    private int altezza2;
-
-    private int larghezza1;
-    private int larghezza2;
 
     public Rettangolo(int altezza, int larghezza) {
         this.altezza = altezza;
         this.larghezza = larghezza;
     }
 
-    public Rettangolo( int altezza1,int larghezza1, int larghezza2, int altezza2) {
-        this.altezza1 = altezza1;
-        this.larghezza1 = larghezza1;
-        this.altezza2 = altezza2;
-        this.larghezza2 = larghezza2;
-    }
 
     public int areaRettangolo() {
         return altezza * larghezza ;
@@ -29,23 +18,23 @@ public class Rettangolo {
         return 2*(altezza+larghezza);
     }
 
-
-    public int areaRettangolo1() {
-        return altezza1 * larghezza1 ;
+    public  static  void stampaRettangolo(Rettangolo rr) {
+        System.out.println("stampo area rettangolo" + rr.areaRettangolo());
+        System.out.println("stampo permitero rettangolo" + rr.perimetroRettangolo());
     }
 
-    public int areaRettangolo2() {
-        return altezza2 * larghezza2 ;
+    public static void stampaDueRett(Rettangolo r1, Rettangolo r2) {
+        int areaTotale = r1.areaRettangolo() + r2.areaRettangolo();
+        int perimetroTotale = r1.perimetroRettangolo() + r2.perimetroRettangolo();
+        int pEa = areaTotale + perimetroTotale;
+
+        System.out.println("AREA TOTALE ULTIMI 2 RETTANGOLI: " + areaTotale);
+        System.out.println("PERIMETRO TOTALE ULTIMI 2 RETTANGOLI: " + perimetroTotale);
+        System.out.println("PERIMETRO TOTALE + AREA TOTALE ULTIMI 2 RETTANGOLI: " + pEa);
+
     }
 
-    public int perimetroRettangolo1() {
-        return 2*(altezza1+larghezza1);
-    }
 
-    public int perimetroRettangolo2() {
-        return 2*(altezza2+larghezza2);
-    }
-    public int sommaAreaEperimSecEterzTriang () {
-        return (areaRettangolo1() + areaRettangolo2()) + (perimetroRettangolo1() + perimetroRettangolo2());
-    }
+
+
 }

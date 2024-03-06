@@ -12,16 +12,20 @@ public class Main {
 
         System.out.println("SIM CREATA: " + uno.toString());
 
+        System.out.println("INSERISCI CREDITO");
+        double credito = Double.parseDouble(scan.nextLine());
+        uno.aggiungiCash(credito);
 
-        System.out.println("INSERISCI LA DURATA DELLA CHIAMATA:");
-        int durata = Integer.parseInt(scan.nextLine());
-        System.out.println("INSERISCI UN NUMERO CHIAMATO:");
-        long numeroChiamato = Long.parseLong(scan.nextLine());
-        Sim due = new Sim(numero);
+        Chiamata[] chiamate = new Chiamata[5];
+        chiamate[0] = new Chiamata("+39 3494278805", 20);
+        chiamate[1] = new Chiamata("+39 3494278805", 1);
+        chiamate[2] = new Chiamata("+39 3494275405", 7);
+        chiamate[3] = new Chiamata("+39 3494278876", 1);
+        chiamate[4] = new Chiamata("+39 3494272358", 13);
+        uno.setChiamate(chiamate);
+        uno.stampaDati();
 
-        due.aggiungiChiamata(durata, (int) numeroChiamato);
 
-        System.out.println("LISTA DI CHIAMATE: " + due);
 
         scan.close();
     }

@@ -23,14 +23,20 @@ public class Main {
         System.out.println("INSERISCI LA LARGHEZZA DEL PRIMO E SECONDO RETTANGOL0");
         int larghezza1 = Integer.parseInt(scan.nextLine());
         int larghezza2 = Integer.parseInt(scan.nextLine());
-        Rettangolo due = new Rettangolo(altezza1, altezza2, larghezza1, larghezza2);
+        Rettangolo due = new Rettangolo(altezza1, larghezza1);
+        Rettangolo tre = new Rettangolo(altezza2, larghezza2);
 
-        System.out.println("L'AREA DEL PRIMO RETTANGOLO è: " + due.areaRettangolo1());
-        System.out.println("IL PERIMETRO DEL PRIMO RETTANGOLO è: " + due.perimetroRettangolo1());
-        System.out.println("L'AREA DEL SECONDO RETTANGOLO è: " + due.areaRettangolo2());
-        System.out.println("IL PERIMETRO DEL SECONDO RETTANGOLO è: " + due.perimetroRettangolo2());
+        System.out.println("L'AREA DEL PRIMO RETTANGOLO è: " + due.areaRettangolo());
+        System.out.println("IL PERIMETRO DEL PRIMO RETTANGOLO è: " + due.perimetroRettangolo());
+        System.out.println("L'AREA DEL SECONDO RETTANGOLO è: " + tre.areaRettangolo());
+        System.out.println("IL PERIMETRO DEL SECONDO RETTANGOLO è: " + tre.perimetroRettangolo());
 
-        System.out.println("SOMMA DI AREE E PERIMETRI DI ULTIMI DUE RETTANGOLI: " + due.sommaAreaEperimSecEterzTriang());
+        System.out.println("STAMPO TUTTI I RETTANGOLI:");
+        Rettangolo.stampaRettangolo(uno);
+        Rettangolo.stampaRettangolo(due);
+        Rettangolo.stampaRettangolo(tre);
+
+        Rettangolo.stampaDueRett(due, tre);
 
         scan.close();
     }
