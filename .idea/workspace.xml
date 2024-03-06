@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4a66947-ad69-4cd1-9bf2-00d2a9a0b719" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/es_2/entities/Chiamata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/es_3/entities/Articolo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/es_3/entities/Carrello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/es_3/entities/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/es_3/entities/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es_1/entities/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_1/entities/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es_1/entities/Rettangolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_1/entities/Rettangolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es_2/entities/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_2/entities/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es_2/entities/Sim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_2/entities/Sim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
