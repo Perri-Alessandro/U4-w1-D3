@@ -22,4 +22,20 @@ public class Articolo {
                 ", availablePieces=" + availablePieces
                 ;
     }
+
+    public String getCodice() {
+        return codice;
+    }
+
+    public String getDescrizioneArticolo() {
+        return descrizioneArticolo;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getAvailablePieces() {
+        return availablePieces;
+    }
 }

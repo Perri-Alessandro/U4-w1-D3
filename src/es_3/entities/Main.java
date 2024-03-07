@@ -20,9 +20,15 @@ public class Main {
         Cliente neww = new Cliente( name, email);
         System.out.println("REGISTRAZIONE AVVENUTA CON SUCCESSO: " + neww);
 
-        Carrello carrello = new Carrello(neww ,primo, primo.price);
-        System.out.println("RESOCONTO CARRELLO: " + carrello);
-        
+        Articolo[] articolii = {primo, secondo};
+        Carrello carrello = new Carrello(neww , articolii);
+        System.out.println("RESOCONTO CARRELLO: " + carrello.totCarrello());
+
+        Articolo[] nuovi = {primo, secondo, primo, secondo, primo, secondo};
+
+            Carrello newww = new Carrello(neww, nuovi);
+        System.out.println("RESOCONTO NUOVO CARRELLO: " + newww.totCarrello());
+
         scan.close();
     }
 }

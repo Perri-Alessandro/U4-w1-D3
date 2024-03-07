@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4a66947-ad69-4cd1-9bf2-00d2a9a0b719" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es_3/entities/Articolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_3/entities/Articolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es_3/entities/Carrello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_3/entities/Carrello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es_3/entities/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es_3/entities/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/perri/OneDrive/Desktop/Epicode/Corso/Back End/U4 w1 D3",
     "onboarding.tips.debug.path": "C:/Users/perri/OneDrive/Desktop/Epicode/Corso/Back End/U4 w1 D3/src/Main.java"
   }
 }]]></component>
